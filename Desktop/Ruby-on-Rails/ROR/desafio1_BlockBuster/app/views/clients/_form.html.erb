@@ -10,18 +10,19 @@
     </div>
   <% end %>
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :Nombre, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
   <div>
-    <%= form.label :age, style: "display: block" %>
+    <%= form.label :Edad, style: "display: block" %>
     <%= form.text_field :age %>
   </div>
   <div>
-    <%= form.label :movie_id, style: "display: block" %>
-    <%= form.collection_select :movie_id, @movies, :id, :name, { include_blank: 'Por favor elige una película' }%>
+    <%= form.label :Película, style: "display: block" %>
+    <%= form.collection_select :movie_id, @movies, :id, :name, { include_blank: "Por favor elige una película" }%>
   </div>
+  <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit "Crear cliente", class:"btn btn-primary" %>
   </div>
 <% end %>

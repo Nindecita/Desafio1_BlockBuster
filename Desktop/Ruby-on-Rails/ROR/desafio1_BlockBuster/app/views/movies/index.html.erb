@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 <div class="container">
-  <h1>Películas</h1>
-  <%= link_to "Nueva película", new_movie_path %>
+  <h1 class="text-center">Películas</h1>
+  <%= link_to "Nueva película", new_movie_path, class: "btn btn-secondary" %>
   <div id="Películas">
     <div class="row">
       <% @movies.each do |movie| %>

@@ -2,6 +2,6 @@
 <%= render "form", movie: @movie %>
 <br>
 <div>
-  <%= link_to "Mostrar esta película", @movie %> |
-  <%= link_to "Regresar a películas", movies_path %>
+  <%= link_to "Mostrar película", @movie, class: "btn btn-primary" %>
+  <%= link_to "Regresar a películas", movies_path, class: "btn btn-secondary" %>
 </div>
